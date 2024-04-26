@@ -273,6 +273,13 @@ nav {
     border: 2px solid var(--cor-destaque);
     color: var(--cor-destaque);
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.experience__botao-repo:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-secundaria);
+    box-shadow: 0 0 10px 2px var(--cor-secundaria);
 }
 
 .experience__botao-demo {
@@ -281,6 +288,13 @@ nav {
     background-color: var(--cor-destaque);
     color: var(--cor-secundaria);
     border: none;
+    cursor: pointer;
+}
+
+.experience__botao-demo:hover {
+    color: var(--cor-destaque);
+    background-color: var(--cor-secundaria);
+    box-shadow: 0 0 10px 2px var(--cor-destaque);
 }
 
 /*Contato*/
@@ -343,6 +357,12 @@ nav {
     border: 2px solid var(--cor-secundaria);
     background-color: var(--cor-destaque);
     color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+.formcontato__botao:hover {
+    background-color: var(--cor-primaria);
+    box-shadow: 0 0 10px 2px var(--cor-secundaria);
 }
 
 /*footeer*/

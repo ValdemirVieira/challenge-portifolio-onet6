@@ -1,32 +1,40 @@
-//Seu JavaScript de validação aqui
 const inputNome = document.getElementById('nome');
 const inputEmail = document.getElementById('email');
 const inputAssunto = document.getElementById('assunto');
 const mensagem = document.getElementById('mensagem');
 const botao = document.getElementById('botao');
-const mensagemErro = document.getElementById('msgErr'); //Precisa corrigir
 
 function validarNome() {
     if(inputNome.value.length < 10 || inputNome.value.length > 50) {
-        mensagemErro.innerText = 'O campo nome deve conter, no mínimo, 10 caracteres.';
+        alert('O campo nome deve conter, no mínimo, 10 caracteres e, no máximo, 50 caracteres.');
 
         return false;
     } else {
-        mensagemErro.innerText = 'Nome válido!';
+        alert('Nome válido!');
 
         return true;
     }
 }
 
-function validarEmail() {}
-
-function validarAssunto() {
-    if(inputAssunto.value.length < 10 || inputAssunto.value.length > 50) {
-        mensagemErro.innerText = 'O campo assunto deve conter, no mínimo, 10 caracteres.';
+function validarEmail() {
+    if(inputEmail.value.length < 11 || inputEmail.value.length > 50) {
+        alert('O campo email deve conter, no mínimo, 11 caracteres e, no máximo, 50 caracteres.');
 
         return false;
     } else {
-        mensagemErro.innerText = 'Campo assunto válido!';
+        alert('Campo email válido!');
+
+        return true;
+    }
+}
+
+function validarAssunto() {
+    if(inputAssunto.value.length < 10 || inputAssunto.value.length > 50) {
+        alert('O campo assunto deve conter, no mínimo, 10 caracteres e, no máximo, 50 caracteres.');
+
+        return false;
+    } else {
+        alert('Campo assunto válido!');
 
         return true;
     }
@@ -34,11 +42,11 @@ function validarAssunto() {
 
 function validarMensagem() {
     if(mensagem.value.length < 10 || inputAssunto.value.length > 300) {
-        mensagemErro.innerText = 'O campo mensagem deve conter, no mínimo, 10 caracteres e, no máximo, 300 caracteres.';
+        alert('O campo mensagem deve conter, no mínimo, 10 caracteres e, no máximo, 300 caracteres.');
 
         return false;
     } else {
-        mensagemErro.innerText = 'Mensagem válida!';
+        alert('Mensagem válida!');
 
         return true;
     }
